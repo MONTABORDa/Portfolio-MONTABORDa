@@ -1457,3 +1457,30 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+
+
+
+
+
+.button_slide {
+  background: linear-gradient(to top, #040b14, #3a3a3b);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 0px;
+  padding: 15px 50px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #948686;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.1s;
+  transition: ease-out 0.4s;
+}
+
+.button_slide a {
+  color: #ffffff;
+  text-decoration: none;
+}
