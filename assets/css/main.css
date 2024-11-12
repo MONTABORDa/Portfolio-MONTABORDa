@@ -1451,19 +1451,6 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
-
-
-
-
-
-
-
 .button_slide {
   background: linear-gradient(to top, #040b14, #3a3a3b);
   border: 3px solid rgb(0, 0, 0);
@@ -1483,4 +1470,11 @@ section,
 .button_slide a {
   color: #ffffff;
   text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Starter Section Section
+--------------------------------------------------------------*/
+.starter-section {
+  /* Add your styles here */
 }
