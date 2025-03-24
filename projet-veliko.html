@@ -160,38 +160,87 @@
         </style>
     </head>
     <body>
-    <h1>Projet Veliko - Gestion des Vélos Urbains</h1>
-    <p>Veliko est une application permettant aux utilisateurs de suivre la disponibilité des vélos en libre-service dans le cadre du système Vélib' Métropole à Paris. Avec un réseau de 1 464 stations réparties à travers Paris et l'Île-de-France, l'application fournit des informations en temps réel sur la disponibilité des vélos, y compris la distinction entre vélos classiques et vélos électriques.</p>
+    <div class="section-title" style="padding: 20px;">
+        <h1>Projet Veliko - Gestion des Vélos Urbains</h1>
 
-    <h2>Mon Rôle - DevOps</h2>
-    <p>En tant que responsable DevOps, mon rôle a été essentiel dans la mise en place de l'infrastructure, la gestion de l'automatisation des déploiements, et la sécurisation des serveurs pour garantir que l'application fonctionne de manière optimale et sécurisée. J'ai contribué à la mise en place des bonnes pratiques DevOps pour faciliter les mises à jour et garantir la scalabilité et la sécurité de l'application.</p>
+        <!-- Groupe 1 : Présentation + Rôle -->
+        <div class="options" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <div class="option-box wide" style="width: 100%; max-width: 1000px;">
+                <h2>Présentation du projet</h2>
+                <p>
+                    Veliko est une application permettant aux utilisateurs de suivre la disponibilité des vélos en libre-service dans le cadre du système Vélib' Métropole à Paris.
+                    Avec un réseau de 1 464 stations réparties à travers Paris et l'Île-de-France, l'application fournit des informations en temps réel sur la disponibilité des vélos,
+                    y compris la distinction entre vélos classiques et vélos électriques.
+                </p>
+            </div>
 
-    <h2>Phases du Projet</h2>
-    <h3>Release 1 : Préparation des Environnements de Développement</h3>
-    <p>La première phase a consisté à préparer les environnements de développement pour les équipes. Il s'agissait de configurer les outils nécessaires pour la gestion de code source, l'intégration continue, et la validation des premiers développements. Cette étape a assuré une collaboration fluide entre les équipes et un environnement stable pour tester les premiers composants de l'application.</p>
+            <div class="option-box wide">
+                <h2>Mon Rôle - DevOps</h2>
+                <p>
+                    En tant que responsable DevOps, mon rôle a été essentiel dans la mise en place de l'infrastructure, la gestion de l'automatisation des déploiements,
+                    et la sécurisation des serveurs pour garantir que l'application fonctionne de manière optimale et sécurisée.
+                    J'ai contribué à la mise en place des bonnes pratiques DevOps pour faciliter les mises à jour et garantir la scalabilité et la sécurité de l'application.
+                </p>
+            </div>
+        </div>
 
-    <h3>Release 2 & 3 : Mise en place de l'Infrastructure Serveur</h3>
-    <p>Les releases 2 et 3 ont été centrées sur le déploiement de l'infrastructure nécessaire à l'application web. Voici les étapes clés de ces releases :</p>
-    <ul>
-        <li><strong>Machine Virtuelle :</strong> Mise en place d'une machine virtuelle (ESX ou similaire) pour héberger l'infrastructure, permettant une gestion flexible des ressources.</li>
-        <li><strong>Serveur HTTP :</strong> Installation d'un serveur HTTP (Apache ou Nginx) avec PHP 8.2 et les modules nécessaires pour garantir le bon fonctionnement de l'application web.</li>
-        <li><strong>Serveur de Base de Données :</strong> Mise en place d'un serveur de base de données (par exemple MySQL ou PostgreSQL) pour stocker les informations sur les stations, les vélos et les utilisateurs. Ce serveur assure la persistance des données essentielles pour le bon fonctionnement de l'application.</li>
-        <li><strong>Serveur SFTP :</strong> Mise en place d'un serveur SFTP pour la livraison sécurisée de l'application et des mises à jour régulières. Cela permet un transfert de fichiers sécurisé entre les développeurs et le serveur de production.</li>
-        <li><strong>Domaine Interne :</strong> Configuration d’un domaine interne sous la forme <code>gr<numero>.veliko.lan</code> pour faciliter l’accès sécurisé et l'administration des ressources sur le réseau local.</li>
-    </ul>
-    <img src="assets/img/Infra%20projet%20veliko.png">
+        <!-- Bloc Phases du Projet : structure 2 colonnes -->
+        <div class="option-box" style="width: 100%; max-width: 1000px; margin: 40px auto;">
+            <h2>Phases du Projet</h2>
 
-    <h3>Release 4 : Sécurisation de l'Architecture et Automatisation</h3>
-    <p>La phase finale a porté sur la sécurisation de l'infrastructure et l'automatisation des processus afin de garantir la stabilité à long terme. Voici les actions clés :</p>
-    <ul>
-        <li><strong>Gestion des Backups :</strong> Mise en place d'une stratégie de sauvegarde de la base de données incluant des sauvegardes complètes et incrémentielles. Des tests réguliers de restauration ont été effectués pour assurer la fiabilité des backups.</li>
-        <li><strong>Sécurisation de l'Architecture :</strong> Application des recommandations de l'ANSSI pour sécuriser les serveurs et les communications. Cela inclut la configuration de pare-feu, l’utilisation de VPN pour sécuriser les échanges internes, et l’audit des systèmes pour garantir qu’ils sont protégés contre les attaques externes.</li>
-        <li><strong>Sécurisation du Code :</strong> Mise en place de processus rigoureux pour la revue de code et l’audit de sécurité. Cela a permis de détecter et corriger les vulnérabilités, comme les injections SQL et les failles de sécurité potentielles dans le code.</li>
-        <li><strong>Automatisation du Déploiement :</strong> Mise en place d’un pipeline CI/CD (Continuous Integration / Continuous Deployment) avec des outils comme Jenkins ou GitLab CI. Cela a permis d’automatiser les tests, la validation et le déploiement de nouvelles versions de l’application sur les environnements de staging et de production. Cette automatisation a assuré des mises à jour rapides et sécurisées de l’application.</li>
-    </ul>
+            <div class="project-phases" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
 
-    <h2>Conclusion</h2>
-    <p>Le projet Veliko a permis de mettre en place une infrastructure robuste, sécurisée et scalable pour supporter une application web complexe dédiée à la gestion des vélos en libre-service. Grâce à une approche DevOps, nous avons optimisé le processus de développement, automatisé les déploiements, et assuré la sécurité des données et des systèmes. Ce projet est un excellent exemple de l'importance de l'automatisation et de la sécurisation dans les environnements de production modernes.</p>
+                <!-- Colonne de gauche : Phase 1 et 4 -->
+                <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 20px;">
+                    <div class="option-box" style="width: 100%; background-color: #f9f9f9;">
+                        <h3>Release 1 : Préparation des Environnements</h3>
+                        <p>
+                            Configuration des outils pour la gestion du code source, CI/CD, et validation des premiers développements.
+                            Objectif : créer un environnement stable pour la collaboration des équipes.
+                        </p>
+                    </div>
+
+                    <div class="option-box" style="width: 100%; background-color: #f9f9f9;">
+                        <h3>Release 4 : Sécurisation & Automatisation</h3>
+                        <ul>
+                            <li><strong>Backups :</strong> Sauvegardes complètes + tests réguliers.</li>
+                            <li><strong>Sécurisation :</strong> Recommandations ANSSI, VPN, pare-feu.</li>
+                            <li><strong>Sécurité du code :</strong> Audit sécurité, injections SQL, etc.</li>
+                            <li><strong>CI/CD :</strong> Déploiement automatisé via Jenkins ou GitLab CI.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Colonne de droite : Phase 2 & 3 -->
+                <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 20px;">
+                    <div class="option-box" style="width: 100%; background-color: #f9f9f9;">
+                        <h3>Release 2 & 3 : Infrastructure Serveur</h3>
+                        <ul>
+                            <li><strong>VM :</strong> Hébergement sur machine virtuelle.</li>
+                            <li><strong>Serveur HTTP :</strong> Apache/Nginx + PHP 8.2.</li>
+                            <li><strong>Base de Données :</strong> MySQL ou PostgreSQL.</li>
+                            <li><strong>SFTP :</strong> Livraison sécurisée de l'application.</li>
+                            <li><strong>Domaine :</strong> <code>gr&lt;num&gt;.veliko.lan</code>.</li>
+                        </ul>
+                        <img src="assets/img/Infra%20projet%20veliko.png" alt="Infrastructure Veliko" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="options" style="display: flex; justify-content: center; margin-top: 20px;">
+            <div class="option-box narrow">
+                <h2>Conclusion</h2>
+                <p>
+                    Le projet Veliko a permis de mettre en place une infrastructure robuste, sécurisée et scalable.
+                    Grâce à une démarche DevOps, les déploiements ont été automatisés, les environnements sécurisés et le développement optimisé.
+                    Un excellent exemple de la puissance du DevOps dans un contexte de production réel.
+                </p>
+            </div>
+        </div>
+    </div>
     </body>
     </html>
 

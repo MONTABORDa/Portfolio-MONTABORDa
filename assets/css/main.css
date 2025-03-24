@@ -1515,52 +1515,120 @@ h1 {
   gap: 20px;
 }
 
-/* Styles des blocs SLAM & SISR */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Centrage des titres */
+.option-box h2,
+.option-box h3 {
+  text-align: center;
+}
+
+/* Style général */
 .option-box {
   background: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  width: 48%;
   text-align: left;
+  box-sizing: border-box;
 }
 
-.option-box h2 {
-  color: #1d3557;
-  border-left: 5px solid #1d3557;
-  padding-left: 10px;
+/* Pour les blocs côte à côte (ex: SLAM/SISR ou Présentation/DevOps) */
+.option-box.wide {
+  width: 48%;
+  max-width: none;
 }
 
-.option-box p {
-  color: #333;
-  font-size: 16px;
-  line-height: 1.6;
+/* Pour les blocs centrés (ex: Objectifs, Technologies, etc.) */
+.option-box.narrow {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-/* Responsive : affichage en colonne sur petits écrans */
+/* Phases du projet - sous-boxes pleine largeur */
+.project-phases .option-box {
+  width: 100%;
+}
+
+/* Responsive : tous les blocs prennent 100% en petit écran */
 @media (max-width: 768px) {
-  .options {
-    flex-direction: column;
-    align-items: center;
+  .option-box,
+  .option-box.wide,
+  .option-box.narrow {
+    width: 100% !important;
+    max-width: 100% !important;
   }
-  .option-box {
-    width: 100%;
-  }
+}
+
+.projet-archlinux .option-box {
+  margin-bottom: 20px;
 }
 
 
 
 
 
+.stage-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.stage-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.stage-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.stage-images img {
+  width: 300px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 8px;
+}
 
 
 
 
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+  justify-items: center;
+}
 
+.tool-card {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.tool-card img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
 
-
-
-
-
-
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}

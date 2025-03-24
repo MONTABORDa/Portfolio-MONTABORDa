@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Projet Veliko</title>
+    <title>Projet Hôpital</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -61,7 +61,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Astone MONTABORD - Projet Veliko</title>
+    <title>Astone MONTABORD - Projet Hôpital</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -159,42 +159,74 @@
             }
         </style>
     </head>
-    <body>
-    <h1>Résumé du Projet - Conception et Mise en Œuvre d’un Réseau Hospitalier</h1>
+    <div class="section-title" style="padding: 20px;">
+        <h1 style="text-align: center;">Résumé du Projet – Conception et Mise en Œuvre d’un Réseau Hospitalier</h1>
 
-    <h2>Présentation</h2>
-    <p>La Cité Médicale, un fournisseur de soins de santé, possède deux établissements dans la même ville.
-        <br>L’objectif est de créer une infrastructure réseau sécurisée et performante pour connecter ces sites et gérer les communications internes.</p>
+        <!-- Groupe 1 : Présentation + Objectifs -->
+        <div class="options" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <div class="option-box" style="max-width: 600px;">
+                <h2 style="text-align: center;">Présentation</h2>
+                <p>
+                    La Cité Médicale, un fournisseur de soins de santé, possède deux établissements dans la même ville.
+                    <br>L’objectif est de créer une infrastructure réseau sécurisée et performante pour connecter ces sites et gérer les communications internes.
+                </p>
+            </div>
 
-    <h2>Objectifs du Projet</h2>
-    <ul>
-        <li>Déployer un réseau local (LAN) et un réseau étendu (WAN).</li>
-        <li>Héberger des services essentiels : DHCP, DNS, Web et messagerie.</li>
-        <li>Assurer la sécurité et la segmentation du réseau.</li>
-        <li>Garantir la confidentialité, l'intégrité et la disponibilité des données.</li>
-    </ul>
+            <div class="option-box">
+                <h2 style="text-align: center;">Objectifs du Projet</h2>
+                <ul>
+                    <li>Déployer un réseau local (LAN) et un réseau étendu (WAN).</li>
+                    <li>Héberger des services essentiels : DHCP, DNS, Web et messagerie.</li>
+                    <li>Assurer la sécurité et la segmentation du réseau.</li>
+                    <li>Garantir la confidentialité, l'intégrité et la disponibilité des données.</li>
+                </ul>
+            </div>
+        </div>
 
-    <h2>Tâches à Accomplir</h2>
-    <ul>
-        <li>Concevoir la topologie du réseau avec Cisco Packet Tracer.</li>
-        <li>Créer une architecture réseau hiérarchique avec redondance.</li>
-        <li>Configurer les routeurs et commutateurs multicouches.</li>
-        <li>Mettre en place des VLAN et sous-réseaux distincts.</li>
-        <li>Configurer DHCP, DNS et le routage OSPF.</li>
-        <li>Mettre en place un VPN IPSec sécurisé entre les sites.</li>
-        <li>Configurer SSH pour la gestion à distance.</li>
-        <li>Appliquer les listes de contrôle d’accès (ACL) pour la sécurité.</li>
-        <li>Tester et valider la configuration du réseau.</li>
-    </ul>
+        <!-- Bloc Image Projet Hôpital -->
+        <div class="option-box" style="width: 100%; max-width: 1000px; margin: 40px auto; display: flex; justify-content: center;">
+            <img src="assets/img/Projet%20Hopital.png" alt="Schéma du Projet Réseau Hospitalier" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+        </div>
 
-    <h2>Technologies Utilisées</h2>
-    <ul>
-        <li>Cisco Packet Tracer</li>
-        <li>OSPF, VLAN, DHCP, NAT/PAT</li>
-        <li>VPN IPSec, SSH, ACL</li>
-        <li>Infrastructure sans fil (Wi-Fi)</li>
-    </ul>
-    </body>
+
+        <!-- Bloc Tâches : une seule box, contenu en deux colonnes -->
+        <div class="option-box" style="width: 100%; max-width: 1000px; margin: 40px auto;">
+            <h2 style="text-align: center;">Tâches à Accomplir</h2>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <!-- Colonne gauche -->
+                <ul style="flex: 1; min-width: 300px;">
+                    <li>Concevoir la topologie du réseau avec Cisco Packet Tracer.</li>
+                    <li>Créer une architecture réseau hiérarchique avec redondance.</li>
+                    <li>Configurer les routeurs et commutateurs multicouches.</li>
+                    <li>Mettre en place des VLAN et sous-réseaux distincts.</li>
+                    <li>Configurer DHCP, DNS et le routage OSPF.</li>
+                </ul>
+
+                <!-- Colonne droite -->
+                <ul style="flex: 1; min-width: 300px;">
+                    <li>Mettre en place un VPN IPSec sécurisé entre les sites.</li>
+                    <li>Configurer SSH pour la gestion à distance.</li>
+                    <li>Appliquer les listes de contrôle d’accès (ACL) pour la sécurité.</li>
+                    <li>Tester et valider la configuration du réseau.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Groupe 2 : Technologies -->
+        <div class="options" style="display: flex; justify-content: center; gap: 20px;">
+            <div class="option-box">
+                <h2 style="text-align: center;">Technologies Utilisées</h2>
+                <ul>
+                    <li>Cisco Packet Tracer</li>
+                    <li>OSPF, VLAN, DHCP, NAT/PAT</li>
+                    <li>VPN IPSec, SSH, ACL</li>
+                    <li>Infrastructure sans fil (Wi-Fi)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     </html>
 
 
